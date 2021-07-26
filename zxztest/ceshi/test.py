@@ -11,7 +11,7 @@ import yaml
 
 # 获取引用模块的文件的绝对路径
 pyfile=os.path.dirname(os.path.realpath(__file__))
-yamlfile =os.path.join(pyfile,"test.yaml")
+yamlfile =os.path.join( pyfile, "test.yaml" )
 
 o=open(yamlfile,'r',encoding='utf-8')
 ii=o.read()

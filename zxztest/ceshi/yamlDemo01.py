@@ -8,7 +8,7 @@ import os
 # 获取当前脚本所在的文件夹路径
 codefilePath =os.path.dirname(os.path.realpath(__file__))
 #     获取yaml的路径
-ymalfile = os.path.join(codefilePath,"test.yaml")
+ymalfile = os.path.join( codefilePath, "test.yaml" )
 
 print(ymalfile)
 # 打开yaml文件（IO）
