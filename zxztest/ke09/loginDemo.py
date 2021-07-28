@@ -4,17 +4,14 @@
 # @Software: PyCharm
 import requests
 import re
-#
+#学生云的登录的接口
 
 def login(s):
-    print(s.cookies)
     jsonParms={"account":"ceshi","password":"90db7a241ee36462c1d24a2cc45c1c8c"}
-    url='http://guanchu.tifenpai.com:9097/cloudApi/front/teacher/login'
+    url='http://222.128.6.177:8666/cloudApi/front/teacher/login'
     r=s.post(url,json=jsonParms)
-    print(r.text)
-    json_ExtRsaPassWord=r.json()['data']['extRsaPassWord']
-    print(json_ExtRsaPassWord)
-    print(s.cookies)
+    print('登录返回json是：%s'%r.text)
+    print('登录cookie是：%s'%s.cookies)
 
 def zuoCe():
     s= requests.session()
