@@ -14,7 +14,7 @@ import re
 
 def login(s):
     print(s.cookies)
-    jsonParms={"account":"shuxue.","password":"5c1e18a0624ddb1ab428f3c06b19fb7e"}
+    jsonParms={"account":"ceshi","password":"90db7a241ee36462c1d24a2cc45c1c8c"}
     url='http://guanchu.tifenpai.com:9097/cloudApi/front/teacher/login'
     r=s.post(url,json=jsonParms)
     print(r.text)
