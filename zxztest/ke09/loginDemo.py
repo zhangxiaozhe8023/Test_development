@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
-# @Time : 2021/7/25 18:41
-# @Author : apple
-# @Software: PyCharm
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # @Time : 2021/7/24 22:18
 # @Author : apple
