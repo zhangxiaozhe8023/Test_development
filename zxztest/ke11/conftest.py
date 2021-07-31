@@ -10,7 +10,7 @@ from zxztest.ke09 import loginDemo
 # 练习pytest的fixture,级别不同，只需要修改scope的
 # `"function"``
 #    `"function"``     (default), ``"class"``, ``"module"``, ``"package"`` or ``"session"``.
-@pytest.fixture(scope='module')
+@pytest.fixture(scope='session')
 def loginfix():
     s = requests.session()
     loginDemo.login(s)

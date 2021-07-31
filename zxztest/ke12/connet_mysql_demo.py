@@ -6,10 +6,10 @@
 import pymysql
 
 mysqlConf = {
-    'host' : '192.168.1.138',
+    'host' : '192.168.1.6',
     'user' : 'root',
-    'password' : '123456',
-    'port' : 3308
+    'password' : 'TQJzxc!@#$111',
+    'port' : 3306
 }
 class dataConnect():
     def __init__(self,db_conf,database=""):
@@ -44,17 +44,17 @@ class dataConnect():
         self.db.close()
 def select_sql(select_sql):
     '''查询数据库'''
-    db = dataConnect(mysqlConf, database="zentao")
+    db = dataConnect(mysqlConf, database="ols_gaosan_new")
     result = db.select(select_sql)  # 查询
     db.close()
     return result
 def execute_sql(insert_sql):
     '''执行sql'''
-    db = dataConnect(mysqlConf, database="zentao")
+    db = dataConnect(mysqlConf, database="ols_gaosan_new")
     db.execute(insert_sql)  # 查询
     db.close()
 
 if __name__ == '__main__':
-    sql = 'SELECT * FROM zt_user;'
+    sql = 'SELECT * FROM student;'
     a = select_sql(sql)
     print(a)
